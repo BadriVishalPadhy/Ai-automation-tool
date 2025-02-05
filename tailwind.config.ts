@@ -9,6 +9,9 @@ export default {
 	],
 	theme: {
 		extend: {
+			fontFamily: {
+				'press-start': ['"Press Start 2P"', 'cursive'],
+			},
 			colors: {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
