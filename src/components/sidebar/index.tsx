@@ -21,7 +21,7 @@ export const menuOptions = [
 
 export default function AnimatedTooltipPreview() {
   return (
-    <div className="flex flex-row items-center justify-center mb-10 w-full">
+    <div className="flex flex-col items-center justify-center mb-10 w-24">
       <AnimatedTooltip items={menuOptions} />
     </div>
   );
