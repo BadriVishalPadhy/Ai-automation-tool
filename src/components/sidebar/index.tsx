@@ -23,7 +23,7 @@ export const menuOptions = [
 
 export default function AnimatedTooltipPreview() {
   return (
-    <div className="flex flex-col items-center justify-center mb-44  w-28">
+    <div className="flex flex-col items-center justify-center mb-44  w-16">
       <AnimatedTooltip items={menuOptions} />
       <Separator />
       <div className="flex items-center flex-col gap-9 dark:bg-[#353346]/30 py-4 px-2 rounded-full h-56 overflow-scroll border-[1px]">
