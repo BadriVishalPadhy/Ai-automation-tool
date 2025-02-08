@@ -40,7 +40,7 @@ export const AnimatedTooltip = ({
     <>
       {items.map((item) => (
         <div
-          className="-mr-4 py-4 relative group"
+          className="-mr-4 p-4 relative group"
           key={item.id}
           onMouseEnter={() => setHoveredIndex(item.id)}
           onMouseLeave={() => setHoveredIndex(null)}
@@ -65,7 +65,7 @@ export const AnimatedTooltip = ({
                   rotate: rotate,
                   whiteSpace: "nowrap",
                 }}
-                className="absolute -top-6  translate-x-1/2 flex text-xs flex-col items-center justify-center rounded-md bg-black z-50 shadow-xl px-4 py-2"
+                className="absolute -top-6  translate-x-1/2 flex text-xs flex-col items-center justify-center rounded-md bg-black z-50 shadow-xl px-4 py-1"
               >
                 <div className="absolute inset-x-10 z-30 w-[20%] -bottom-px bg-gradient-to-r from-transparent via-emerald-500 to-transparent h-px " />
                 <div className="absolute left-10 w-[40%] z-30 -bottom-px bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px " />
@@ -78,7 +78,7 @@ export const AnimatedTooltip = ({
           <Link href={item.href}>
             <div
               onMouseMove={handleMouseMove}
-              className="h-14 w-14 rounded-full bg-gradient-to-r from-blue-400 to-blue-800 flex items-center justify-center group-hover:scale-105 group-hover:z-30 relative transition duration-500"
+              className="h-10 w-10 rounded-full bg-gradient-to-r from-blue-400 to-blue-800 flex items-center justify-center group-hover:scale-105 group-hover:z-30 relative transition duration-500"
             >
               <item.Component className="h-8 w-8 text-white" />
             </div>
