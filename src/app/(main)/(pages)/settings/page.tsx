@@ -25,7 +25,7 @@ const Settings = (props: Props) => {
               <Input id="Name" placeholder="Garp" type="text" />
             </LabelInputContainer>
 
-            <LabelInputContainer className="mb-4">
+            <LabelInputContainer className="mb-5">
               <label htmlFor="email">Email Address</label>
               <Input
                 id="email"
