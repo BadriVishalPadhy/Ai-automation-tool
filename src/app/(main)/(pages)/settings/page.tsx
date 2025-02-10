@@ -22,7 +22,7 @@ const Settings = (props: Props) => {
           <form className="my-8">
             <LabelInputContainer>
               <label htmlFor="Name">First name</label>
-              <Input id="Name" placeholder="Garp" type="text" />
+              <Input id="Name" placeholder="kobi" type="text" />
             </LabelInputContainer>
 
             <LabelInputContainer className="mb-5">
