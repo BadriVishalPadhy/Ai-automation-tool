@@ -1,18 +1,23 @@
 "use client";
 import { FileUploaderRegular } from "@uploadcare/react-uploader/next";
 import "@uploadcare/react-uploader/core.css";
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
 import * as LR from "@uploadcare/react-uploader";
 type Props = {
   onUpload: any;
 };
 
-const UploadCareButton = (props: Props) => {
+const UploadCareButton = ({ onUpload }: Props) => {
   const router = useRouter();
   const ctxProvider = useRef<
     typeof LR.UploadCtxProvider.prototype & LR.UploadCtxProvider
   >(null);
+  useEffect(() => {
+    const handleUpload = async (e: any) => {
+      const file = await onUpload;
+    };
+  }, []);
   return (
     <div>
       <FileUploaderRegular
