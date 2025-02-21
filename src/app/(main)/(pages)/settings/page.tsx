@@ -14,7 +14,7 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import ProfilePicture from "./_components/profile-picture";
+// import ProfilePicture from "./_components/profile-picture";
 
 // Define the validation schema
 const formSchema = z.object({
