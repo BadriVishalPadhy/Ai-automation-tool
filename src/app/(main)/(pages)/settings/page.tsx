@@ -14,6 +14,7 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import ProfilePictureUploader from "./_components/upload-care-button";
 // import ProfilePicture from "./_components/profile-picture";
 
 // Define the validation schema
@@ -80,7 +81,7 @@ const Settings = ({ user, onUpdate }: Props) => {
       <div className="flex flex-col gap-3 p-6">
         <div>
           <h2 className="text-2xl font-bold">User Profile</h2>
-          <ProfilePicture />
+          <ProfilePictureUploader />{" "}
           <p className="text-base text-white/50">
             Add or update your information
           </p>
