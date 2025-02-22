@@ -7,6 +7,7 @@ export default function Home() {
   return (
     <main>
       <div>
+        <Navbar />
         <LetterGlitch
           glitchSpeed={50}
           centerVignette={true}
@@ -14,7 +15,6 @@ export default function Home() {
           smooth={true}
           glitchColors={["#2b4539", "#61dca3", "#61b3dc"]}
         />
-        <Navbar />
       </div>
     </main>
   );
